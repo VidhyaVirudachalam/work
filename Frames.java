@@ -41,6 +41,8 @@ public class Frames {
 		
 		driver.switchTo().defaultContent();
 		
+		driver.switchTo().parentFrame();
+		
 		WebElement other_box = driver.findElement(By.xpath("(//a[@data-toggle='dropdown'])[2]"));
 		other_box.click();
 	}
